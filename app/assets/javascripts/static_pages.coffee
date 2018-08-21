@@ -3,5 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 # Appel des fichiers contenant le javascript/jQuery
-@import function_JS/function_test.js
-@import function_JS/hide_div.js
+
+@import function_JS/tabulation.js
+@import function_JS/carousel.js

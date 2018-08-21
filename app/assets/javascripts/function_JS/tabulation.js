@@ -9,7 +9,7 @@ $(document).ready(function(){
 		$('.show').removeClass('active');
 		$(this).toggleClass('active');
 
-		$('.target').first().show();
+		$('.target').first().show(250);
 	});
 
 	$('.show2').on('click', function(){
@@ -18,7 +18,7 @@ $(document).ready(function(){
 		$('.show').removeClass('active');
 		$(this).toggleClass('active');
 
-		$('.target:eq(1)').show();
+		$('.target:eq(1)').show(250);
 	});
 
 	$('.show3').on('click', function(){
@@ -27,7 +27,7 @@ $(document).ready(function(){
 		$('.show').removeClass('active');
 		$(this).toggleClass('active');
 
-		$('.target').last().show();
+		$('.target').last().show(250);
 	});
 
 });

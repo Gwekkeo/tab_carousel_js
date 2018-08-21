@@ -6,6 +6,7 @@ body{
 }
 p{
 	cursor: pointer;
+	word-wrap: break-word;
 }
 
 /*
@@ -26,7 +27,7 @@ p{
 	border-bottom: solid 1px black;
 }
 
-.container{
+.txt_tab{
 	background-color: white;
 	height: 250px;
 	
@@ -39,7 +40,6 @@ p{
 	color: red;
 }
 
-
 /*
 	----------------------
 	------ CAROUSEL ------
@@ -50,7 +50,6 @@ p{
 	background-color: white;
 	min-height: 300px;
 	border: solid 2px black;
-	/*box-shadow: 0 0 3px 3px;*/
 
 	display: flex;
 	justify-content: space-between;
@@ -66,4 +65,9 @@ p{
 
 .carousel div{
 	margin: auto;
+}
+
+.img img{
+	height: 400px;
+	/*border: solid red 4px;*/
 }
