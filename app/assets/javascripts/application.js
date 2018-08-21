@@ -17,5 +17,5 @@
 //= require turbolinks
 //= require_tree .
 
-@import function_JS/tabulation.js
-@import function_JS/carousel.js
+@import url("function_JS/tabulation.js");
+@import url("function_JS/carousel.js");

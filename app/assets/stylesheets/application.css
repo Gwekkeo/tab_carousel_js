@@ -14,4 +14,4 @@
  *= require_self
  */
 
-@import css/style.css
+@import url("css/style.css"); 
