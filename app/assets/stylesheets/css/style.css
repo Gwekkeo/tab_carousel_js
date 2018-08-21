@@ -8,19 +8,15 @@ p{
 	cursor: pointer;
 }
 
-
-
-.back_red{
-	background-color: red;
-}
-
-
-
-
+/*
+	----------------------
+	----- TABULATION -----
+	----------------------
+*/
 .alignee{
 	display: flex;
 }
-button{
+.tabulation button{
 	width: 35%;
 	min-height: 50px;
 
@@ -35,10 +31,39 @@ button{
 	height: 250px;
 	
 	border: solid 3px black;
-
+	padding: 10px 15px 10px 15px;
 }
 
 .active{
 	background-color: #FFB6B8;
 	color: red;
+}
+
+
+/*
+	----------------------
+	------ CAROUSEL ------
+	----------------------
+*/
+
+.carousel{
+	background-color: white;
+	min-height: 300px;
+	border: solid 2px black;
+	/*box-shadow: 0 0 3px 3px;*/
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.carousel button{
+	min-width: 40px;
+	max-width: 60px;
+	width: 10%;
+
+	border: solid 2px black;
+}
+
+.carousel div{
+	margin: auto;
 }
