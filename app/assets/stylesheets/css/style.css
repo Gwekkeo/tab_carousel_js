@@ -96,6 +96,10 @@ p{
 	justify-content: center;
 }
 
+.btn-circle.active{
+	background-color: orange;
+	color: orange;
+}
 
 
 /*

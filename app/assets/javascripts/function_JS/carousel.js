@@ -17,6 +17,8 @@ $(document).ready(function(){
 			nb_actuel -= 1;
 			$('.img:eq('+nb_actuel+')').show();
 		}
+		$('.btn-circle').removeClass('active');
+		$('.btn-circle').eq(nb_actuel).addClass('active');
 	});
 
 	// BOUTON NEXT
@@ -31,6 +33,8 @@ $(document).ready(function(){
 			nb_actuel += 1;
 			$('.img:eq('+nb_actuel+')').show();
 		}
+		$('.btn-circle').removeClass('active');
+		$('.btn-circle').eq(nb_actuel).addClass('active');
 	});
 
 
@@ -38,18 +42,27 @@ $(document).ready(function(){
 	$('.btn1').on('click', function(){
 		$('.img').hide();
 		$('.img').first().show();
+
+		$('.btn-circle').removeClass('active');
+		$(this).addClass('active');
 		nb_actuel = 0;
 	});
 
 	$('.btn2').on('click', function(){
 		$('.img').hide();
 		$('.img').eq(1).show();
+
+		$('.btn-circle').removeClass('active');
+		$(this).addClass('active');
 		nb_actuel = 1;
 	});
 
 	$('.btn3').on('click', function(){
 		$('.img').hide();
 		$('.img').last().show();
+
+		$('.btn-circle').removeClass('active');
+		$(this).addClass('active');
 		nb_actuel = 2;
 	});
 
