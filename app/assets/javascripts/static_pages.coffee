@@ -4,5 +4,3 @@
 
 # Appel des fichiers contenant le javascript/jQuery
 
-@import function_JS/tabulation.js
-@import function_JS/carousel.js

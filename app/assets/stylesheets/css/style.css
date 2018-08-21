@@ -1,5 +1,5 @@
 body{
-	background-color: pink;
+	/*background-color: pink;*/
 
 	display: flex;
 	flex-direction: column;
@@ -49,27 +49,49 @@ p{
 .carousel{
 	background-color: white;
 	min-height: 300px;
-	border: solid 2px black;
+	/*border: solid 2px black;*/
 
 	display: flex;
 	justify-content: space-between;
+
 }
 
 .carousel button{
 	min-width: 40px;
-	max-width: 60px;
+	max-width: 45px;
 	width: 10%;
 
-	border: solid 2px black;
+	/*border: solid 2px black;*/
 	margin: 0; padding: 0;
 }
 
 .carousel div{
-	margin: auto;
+	margin: auto;	
 	width: 100%;
 }
 
 .img img{
-	height: 400px;
 	width: 100%;
+	max-height: 290px;
+}
+
+.btn-circle{
+	width: 25px;
+	border: 2px solid black;
+	border-radius: 100px 100px 100px 100px;
+
+	background-color: white;
+	color: white;
+	padding: 2px;
+	margin-right: 15px;
+}
+
+.btn-circle:hover{
+	background-color: black;
+	color: black;
+}
+
+.circle{
+	display: flex;
+	justify-content: center;
 }

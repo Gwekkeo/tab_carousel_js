@@ -14,3 +14,6 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+@import function_JS/tabulation.js
+@import function_JS/carousel.js
