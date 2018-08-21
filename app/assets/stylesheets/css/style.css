@@ -36,7 +36,7 @@ p{
 }
 
 .active{
-	background-color: #FFB6B8;
+	background-color: orange;
 	color: red;
 }
 
@@ -94,4 +94,19 @@ p{
 .circle{
 	display: flex;
 	justify-content: center;
+}
+
+
+
+/*
+	--------------------------------
+	------------ NAVBAR ------------
+	--------------------------------
+*/
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	background-color: orange;
 }

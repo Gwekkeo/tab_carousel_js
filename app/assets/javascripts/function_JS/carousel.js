@@ -2,55 +2,58 @@ $(document).ready(function(){
 	var nb_actuel = 0;
 	var nb_photo = 2;
 
-	$('img').hide();
-	$('img').first().show();
-
+	$('.img').hide();
+	$('.img').first().show();
 
 	// BOUTON PREVIOUS
 	$('.previous').on('click', function(){
-		$('img').hide();
+		$('.img').hide();
 
 		if ( nb_actuel <=0 ){
-			$('img').last().show();
+			$('.img').last().show();
 			nb_actuel = 2;
 		}
 		else{
 			nb_actuel -= 1;
-			$('img:eq('+nb_actuel+')').show();
+			$('.img:eq('+nb_actuel+')').show();
 		}
 	});
 
 	// BOUTON NEXT
 	$('.next').on('click', function(){
-		$('img').hide();
+		$('.img').hide();
 
 		if (nb_actuel >= nb_photo){
 			nb_actuel = 0;
-			$('img').first().show();
+			$('.img').first().show();
 		}
 		else{
 			nb_actuel += 1;
-			$('img:eq('+nb_actuel+')').show();
+			$('.img:eq('+nb_actuel+')').show();
 		}
 	});
 
 
-	// CIRCLE BOUTON1
+	// CIRCLE BOUTON
 	$('.btn1').on('click', function(){
-		$('img').hide();
-		$('img').first().show();
+		$('.img').hide();
+		$('.img').first().show();
+		nb_actuel = 0;
 	});
 
-	// CIRCLE BOUTON2
 	$('.btn2').on('click', function(){
-		$('img').hide();
-		$('img').eq(1).show();
+		$('.img').hide();
+		$('.img').eq(1).show();
+		nb_actuel = 1;
 	});
 
-	// CIRCLE BOUTON3
 	$('.btn3').on('click', function(){
-		$('img').hide();
-		$('img').last().show();
+		$('.img').hide();
+		$('.img').last().show();
+		nb_actuel = 2;
 	});
+
+
+
 
 });
