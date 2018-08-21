@@ -3,11 +3,9 @@ $(document).ready(function(){
 	var nb_photo = 2;
 
 	$('img').hide();
-	$('img').first().show();		// 1)WUKONG
-	// $('img:eq(1)').show();		// 2)GNAR
-	// $('img').last().show();		// 3)EKKO
+	$('img').first().show();
 
-	$('.before').on('click', function(){
+	$('.previous').on('click', function(){
 		$('img').hide();
 
 		if ( nb_actuel <=0 ){
@@ -22,7 +20,7 @@ $(document).ready(function(){
 	});
 
 
-	$('.after').on('click', function(){
+	$('.next').on('click', function(){
 		$('img').hide();
 
 		if (nb_actuel >= nb_photo){
