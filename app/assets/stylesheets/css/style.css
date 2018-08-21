@@ -1,0 +1,44 @@
+body{
+	background-color: pink;
+
+	display: flex;
+	flex-direction: column;
+}
+p{
+	cursor: pointer;
+}
+
+
+
+.back_red{
+	background-color: red;
+}
+
+
+
+
+.alignee{
+	display: flex;
+}
+button{
+	width: 35%;
+	min-height: 50px;
+
+	border-right: solid 3px black;
+	border-left: solid 3px black;
+	border-top: solid 3px black;
+	border-bottom: solid 1px black;
+}
+
+.container{
+	background-color: white;
+	height: 250px;
+	
+	border: solid 3px black;
+
+}
+
+.active{
+	background-color: #FFB6B8;
+	color: red;
+}
